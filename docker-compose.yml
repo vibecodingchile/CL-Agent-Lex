@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  agent-cl:
+    build: .
+    volumes:
+      - .:/app
+    environment:
+      - JURISDICTION=CHILE
+    ports:
+      - "3000:3000"
+  blockchain-testnet:
+    image: trufflesuite/ganache-cli:latest
+    ports:
+      - "8545:8545"
