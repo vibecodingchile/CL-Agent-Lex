@@ -200,7 +200,7 @@ export default function App() {
               </div>
               <div className="flex items-start gap-3">
                 <Activity className="w-4 h-4 mt-1" />
-                <p className="text-xs">Emits LegalActVerified events for auditability.</p>
+                <p className="text-xs">Emits AgentActionValidated events for auditability.</p>
               </div>
             </div>
           </div>
